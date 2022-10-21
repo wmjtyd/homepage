@@ -1,0 +1,41 @@
+---
+interface Props {
+    category: string;
+
+    /**
+     * The target URI after clicking the '→' button.
+     */
+    href?: string;
+}
+
+const { category, href } = Astro.props;
+---
+
+<section class="Announce">
+    <div class="Announce-category">{category}</div>
+    <div class="Announce-message"><slot /></div>
+    { href && <div class="Announce-readMore"><a href={href}>→</a></div> }
+</section>
+
+<style lang="scss">
+    .Announce {
+        display: flex;
+        gap: 0.5rem;
+
+        // The alignment of the elements.
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        // The color of this announcement bar.
+        background-color: rgb(55 65 81);
+        color: white;
+
+        // Padding
+        padding: 0.75rem 1.5rem;
+
+        &-category {
+            font-weight: bold;
+        }
+    }
+</style>
