@@ -1,0 +1,56 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<nav class="Navbar">
+    <div class="Navbar-logo">
+        <Image
+            src="/wmjtyd-logo@4x.png"
+            alt="WMJTYD's logo"
+            width="24px"
+            height="24px"
+            format="webp"
+        />
+    </div>
+
+    <div class="Navbar-functions">
+        <button>🇺🇸 English</button>
+        <button class="JoinTeam">加入團隊</button>
+    </div>
+</nav>
+
+<style lang="scss">
+    .Navbar {
+        display: flex;
+
+        // Flexbox
+        justify-content: space-between;
+        align-items: center;
+
+        // Color
+        background-color: #111827;
+
+        // Padding
+        padding: 0.75rem 3.75rem;  // 12px 60px in Figma
+
+        &-functions {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            // Reset the style of button.
+            button {
+                border: 0;
+                padding: 0.375rem 0.75rem;  // 6px 12px
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+    }
+
+    button.JoinTeam {
+        background-color: #FECACA;
+        color: #000;
+        border-radius: 1.125rem;  // 18px
+    }
+</style>

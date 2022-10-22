@@ -1,41 +1,55 @@
 ---
-interface Props {
-    category: string;
+import ArrowRight from './icons/ArrowRight.astro';
 
-    /**
-     * The target URI after clicking the '→' button.
-     */
-    href?: string;
+export interface Props {
+  category: string;
+
+  /**
+   * The target URI after clicking the '→' button.
+   */
+  href?: string;
 }
 
 const { category, href } = Astro.props;
 ---
 
 <section class="Announce">
-    <div class="Announce-category">{category}</div>
-    <div class="Announce-message"><slot /></div>
-    { href && <div class="Announce-readMore"><a href={href}>→</a></div> }
+  <div class="Announce-category">{category}</div>
+  <div class="Announce-message"><slot /></div>
+  {
+    href && (
+      <div class="Announce-readMore">
+        <a href={href}>
+            <ArrowRight />
+        </a>
+      </div>
+    )
+  }
 </section>
 
 <style lang="scss">
-    .Announce {
-        display: flex;
-        gap: 0.5rem;
+  .Announce {
+    display: flex;
+    gap: 2rem;
 
-        // The alignment of the elements.
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    // The alignment of the elements.
+    align-items: center;
+    justify-content: center;
 
-        // The color of this announcement bar.
-        background-color: rgb(55 65 81);
-        color: white;
+    // The color of this announcement bar.
+    background-color: rgb(55 65 81);
+    color: white;
 
-        // Padding
-        padding: 0.75rem 1.5rem;
+    // Padding
+    padding: 0.75rem 3.75rem; // 12px 60px in Figma
 
-        &-category {
-            font-weight: bold;
-        }
+    &-category {
+      font-weight: bold;
     }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 </style>

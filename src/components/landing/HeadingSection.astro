@@ -1,0 +1,104 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import ChevronForwardIcon from "@icons/ChevronForward.astro";
+---
+
+<section class="Heading">
+    <div class="Heading-background">
+        <Image
+            width="1792px"
+            aspectRatio="1792:723"
+            src="/landing-page/background@4x.png"
+            alt="WMJTYD's logo"
+            format="webp"
+        />
+    </div>
+
+    <div class="Heading-content">
+        <div class="Heading-contentIntroduce">
+            <p>利用<strong>新技术、新模式、大数据</strong><br>为企业及个人提供方法论，<br>寻找新的增长点！</p>
+        </div>
+
+        <div class="Heading-contentNav">
+            <a href="/about" class="HeadingNav">
+                介绍视频
+                <ChevronForwardIcon />
+            </a>
+            <a href="/services" class="HeadingNav">
+                成功案例
+                <ChevronForwardIcon />
+            </a>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+	@use "../../styles/variables" as v;
+
+	.Heading {
+		// Make the background image cover the whole section
+		position: relative;
+		color: #F3F4F6;
+
+		&-background {
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+
+			margin-top: 3rem;
+			gap: 1.5rem;
+
+			&Introduce {
+				font-size: 4em;
+				line-height: 1.75;
+				font-weight: 400;
+				text-align: center;
+
+				strong {
+					font-weight: bold;
+					color: v.$accent-color;
+				}
+
+				p {
+					margin: 0;
+				}
+			}
+
+			&Nav {
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+			}
+		}
+	}
+
+	.HeadingNav {
+		font-weight: lighter;
+		text-decoration: none;
+		color: inherit;
+
+		transition: font-weight 0.25s;
+
+		&:hover {
+			font-weight: normal;
+		}
+	}
+</style>

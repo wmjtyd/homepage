@@ -1,4 +1,6 @@
 ---
+import "normalize.css";
+
 export interface Props {
 	title: string;
 }
@@ -7,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hans">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -15,7 +17,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="Page">
 		<slot />
 	</body>
 </html>
+
+<style lang="scss">
+	.Page {
+		background-color: #111827;
+		color: #fff;
+	}
+</style>
