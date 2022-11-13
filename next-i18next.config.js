@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     reloadOnPrerender: true,
-    locales: ['en', 'zh', 'zh-Hant', 'ja'],
+    locales: ['zh', 'en', 'zh-Hant', 'ja'],
     // use: [LanguageDetector],
   },
   serializeConfig: false,

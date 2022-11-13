@@ -14,8 +14,8 @@ export default () => {
           {t('寻找新的增长点!')}
         </p>
         <div className="main">
-          <a className="main-link">{t('介绍视频')}  〉</a>
-          <a className="main-link">{t('成功案例')}  〉</a>
+          {/* <a className="main-link">{t('介绍视频')}  〉</a> */}
+          {/* <a className="main-link">{t('成功案例')}  〉</a> */}
         </div>
       </div>
     </div>

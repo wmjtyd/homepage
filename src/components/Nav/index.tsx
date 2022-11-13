@@ -9,7 +9,7 @@ export default () => {
       </a>
       <div className="flex-1 flex justify-end items-center">
         <ChangeLanguage />
-        <button className="pin-bg rounded-full px-3 h-8">{t('加入国际')}</button>
+        <a href={t('https://github.com/wmjtyd')}><button className="pin-bg rounded-full px-3 h-8">{t('加入国际')}</button></a>
       </div>
     </div>
   );

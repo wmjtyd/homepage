@@ -19,8 +19,8 @@ export default () => {
                 {t('让您的交易抢占先机，无往不利。')}
               </div>
               <div>
-                <a className="service-item-link"><AiOutlineLink className="inline"/>{t('深入了解')}</a>
-                <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('申请试用')}</a>
+                {/* <a className="service-item-link"><AiOutlineLink className="inline"/>{t('深入了解')}</a> */}
+                {/* <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('申请试用')}</a> */}
               </div>
               <div className="service-item-footer flex">
                 <div className="flex-1 flex flex-col">
@@ -43,8 +43,8 @@ export default () => {
                 {t('为您的系统锦上添花。')}
               </div>
               <div>
-                <a className="service-item-link"><AiOutlineLink className="inline"/> {t('深入了解')}</a>
-                <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('立即咨询')}</a>
+                {/* <a className="service-item-link"><AiOutlineLink className="inline"/> {t('深入了解')}</a> */}
+                {/* <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('立即咨询')}</a> */}
               </div>
               <div className="service-item-footer flex">
                 <div className="flex-1 flex flex-col">
@@ -68,8 +68,8 @@ export default () => {
                 {t('进行项目孵化')}
               </div>
               <div>
-                <a className="service-item-link"><AiOutlineLink className="inline"/>{t('深入了解')}</a>
-                <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('查看示例')}</a>
+                {/* <a className="service-item-link"><AiOutlineLink className="inline"/>{t('深入了解')}</a> */}
+                {/* <a className="ml-10 service-item-link"><AiOutlineLink className="inline"/> {t('查看示例')}</a> */}
               </div>
               <div className="service-item-footer flex">
                 <div className="flex-1 flex flex-col">
