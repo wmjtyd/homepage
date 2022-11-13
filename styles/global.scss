@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './base.scss';
+
+a {
+  cursor: pointer;
+}
+
+.alert-loading {
+  @apply alert-info;
+}
+
+.index-main {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  .main-link {
+    font-size: 20px;
+    color: #ddd;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .service-en-title {
+    margin-top: 62px;
+    font-size: 20px;
+  }
+  .service-title {
+    font-weight: bold;
+    font-size: 62px;
+    margin-top: 12px;
+  }
+  .service-desc {
+    font-size: 26px;
+    margin-top: 12px;
+  }
+  .service-card {
+    margin-top: 30px;
+    .main-cover {
+      background-color: rgba(0,0,0,.6);
+      padding: 30px 10px;
+    }
+  }
+
+  .service-item-title {
+    font-size: 46px;
+  }
+  .service-item-desc {
+    font-size: 23px;
+  }
+  .service-item-link {
+    font-size: 20px;
+    color: #fecaca;
+  }
+  .service-item-footer {
+    font-size: 18px;
+  }
+  .service-item-entitle {
+    font-size: 16px;
+  }
+  .service-item-cntitle {
+    font-size: 30px;
+  }
+
+  .service-card-signal {
+    background-image: url('../public/static/wm4.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+  .service-card-system {
+    background-image: url('../public/static/wm2.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    
+  }
+  .service-card-task {
+    background-image: url('../public/static/wm1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+
+  .cases-item {
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 20px 60px;
+    text-align: left;
+    position: relative;
+  }
+  .cases-finance {
+    background-image: url('../public/static/wm4.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+  .cases-partner {
+    margin-top: 10px;
+    background-image: url('../public/static/wm6.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .cases-item-title {
+    font-size: 20px;
+  }
+  .cases-item-desc {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .cases-item-link {
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+.footer {
+  background-color: #1f2937;
+
+  .footer-title {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom : 10px;
+  }
+  .footer-team {
+    a {
+      cursor: pointer;
+      margin-left: 5px;
+      color: #fecaca;
+    }
+  }
+  .footer-site-map {
+    ol, li, ul {
+      list-style: disc;
+      margin-left: 10px;
+    }
+  }
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  .pin-bg {
+    background-color: #fecaca;
+    color: black;
+  }
+}
+.introduce-main {
+  background-image: url('../public/static/wm5.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .main-cover {
+    background-color: rgba(0,0,0,.6);
+    padding: 150px;
+  }
+
+  .highliht {
+    font-weight: bold;
+    color: #fecaca;
+  }
+}
+
+[data-theme=""],
+[data-theme="default"],
+[data-theme="light"] {
+  .logo-bg {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background-repeat: none;
+    background-size: 100% 100%;
+    background-image: url(../public/logo.png);
+  }
+  .bg-theme-primary {
+    @apply bg-primary;
+  }
+  .text-theme-primary {
+    @apply text-primary-content;
+  }
+  .text-theme-white {
+    @apply text-gray-100;
+  }
+  .bg-theme-black {
+    @apply bg-gray-900;
+  }
+  .border-theme-white {
+    @apply text-gray-300;
+  }
+  .bg-theme-gray {
+    @apply bg-[#2a2a2c] text-white;
+  }
+  .bg-hover-theme-gray {
+    @apply hover:bg-gray-800;
+  }
+}
+
+[data-theme="light"] {
+  .logo-bg {
+    background-image: url(../public/logo_light.png);
+  }
+  .bg-theme-primary {
+    @apply bg-primary-content;
+  }
+  .text-theme-primary {
+    @apply text-primary;
+  }
+  .text-theme-white {
+    @apply text-gray-900;
+  }
+  .bg-theme-black {
+    @apply bg-gray-100;
+  }
+  .border-theme-white {
+    @apply text-gray-900;
+  }
+  .bg-hover-theme-gray {
+    @apply hover:bg-gray-200;
+  }
+}
+.bg-loading {
+  @apply bg-info;
+}
+.text-loading {
+  @apply text-info;
+}
+.alert-loading {
+  @apply alert-info;
+}
+.from-loading {
+  @apply from-info;
+}
+.btn-disabled {
+  @apply text-gray-500;
+}
+.modal-box {
+  @apply bg-theme-gray;
+}
+
+.svg-module {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  @apply bg-base-200;
+
+  .svg-module-main {
+    border-radius: 50%;
+    @apply bg-base-200;
+  }
+}
+
+.table :where(thead, tfoot) :where(th, td) {
+  text-transform: none;
+}
+.leading-initial {
+  line-height: initial !important;
+}
+.rounded-full-important {
+  border-radius: 999px !important;
+}
+.radial-progress:after {
+  background-color: transparent !important;
+}
+#__next {
+  min-width: 1230px;
+  min-height: 100%;
+  height: 100%;
+}
+body,
+html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  // box-sizing: content-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  ::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+
+.hover-display {
+  &:hover {
+    .hidden {
+      display: block;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.leading-15 {
+  line-height: 4rem;
+}
+.min-h-36 {
+  min-height: 9rem;
+}
+.min-h-72 {
+  min-height: 18rem;
+}
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+
+.popover-bottom {
+  margin-top: -120%;
+}
+
+.drawer-wrapper {
+  .drawer {
+    animation: AlphaTo .3s ease-out .3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes AlphaTo {
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.drawer {
+  position: absolute;
+}
