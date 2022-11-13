@@ -16,7 +16,11 @@ a {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 60px;
+  font-size: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
   .main-link {
     font-size: 20px;
     color: #ddd;
@@ -29,8 +33,11 @@ a {
   }
   .service-title {
     font-weight: bold;
-    font-size: 62px;
+    font-size: 36px;
     margin-top: 12px;
+    @media (min-width: 768px) {
+      font-size: 62px;
+    }
   }
   .service-desc {
     font-size: 26px;
@@ -45,7 +52,10 @@ a {
   }
 
   .service-item-title {
-    font-size: 46px;
+    font-size: 30px;
+    @media (min-width: 768px) {
+      font-size: 46px;
+    }
   }
   .service-item-desc {
     font-size: 23px;
@@ -61,7 +71,10 @@ a {
     font-size: 16px;
   }
   .service-item-cntitle {
-    font-size: 30px;
+    font-size: 26px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   .service-card-signal {
@@ -160,7 +173,12 @@ a {
   background-size: cover;
   .main-cover {
     background-color: rgba(0,0,0,.6);
-    padding: 150px;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (min-width: 1024px) {
+      padding: 150px;
+    }
   }
 
   .highliht {
@@ -271,7 +289,11 @@ a {
   background-color: transparent !important;
 }
 #__next {
-  min-width: 1230px;
+  min-width: 100%;
+  
+  @media (min-width: 768px) {
+    min-width: 1230px;
+  }
   min-height: 100%;
   height: 100%;
 }

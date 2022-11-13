@@ -4,8 +4,8 @@ import { BsTelegram } from 'react-icons/bs';
 
 export default () => {
   const { t } = useTranslation(['common']);
-  return <div className="mx-auto footer py-10 text-4 text-white mt-10">
-    <div className="container grid grid-cols-11 gap-4">
+  return <div className="mx-auto footer py-10 px-5 xl:px-0 text-4 text-white mt-10">
+    <div className="container grid grid-cols-1 md:grid-cols-12 gap-4">
     <div className="col-span-4">
       <div className="footer-title">{t('团队介绍')}</div>
       <p className="mt-5">{t('团队成立于 2012 年，利用剩余价值，我们聚合了大量的民间高手，')}
@@ -35,9 +35,9 @@ export default () => {
         </div>
       </div>
     </div>
-    <div className="col-span-2">
+    <div className="col-span-3">
       <div className="footer-title">{t('网站地图')}</div>
-      <div className="grid grid-cols-2 gap-6 footer-site-map">
+      <div className="grid grid-cols-3 md:grid-cols-2 gap-6 footer-site-map">
         <ol className="grid-cols-1">
           <li>{t('金融业务')}</li>
           <ol>

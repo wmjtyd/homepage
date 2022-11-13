@@ -4,7 +4,7 @@ import { ChangeLanguage } from '../i18n/ChangeLanguage';
 export default () => {
   const { t } = useTranslation(['common']);
   return (
-    <div className="container mx-auto flex flex-row items-center">
+    <div className="container mx-auto flex flex-row items-center px-2 xl:px-0">
       <a href="/" className="logo-bg">
       </a>
       <div className="flex-1 flex justify-end items-center">
