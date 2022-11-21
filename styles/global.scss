@@ -102,9 +102,12 @@ a {
   .cases-item {
     border: 2px solid #555;
     border-radius: 10px;
-    padding: 20px 60px;
+    padding: 10px 20px;
     text-align: left;
     position: relative;
+    @media (min-width: 768px) {
+      padding: 20px 60px;
+    }
   }
   .cases-finance {
     background-image: url('../public/static/wm4.png');
@@ -124,8 +127,12 @@ a {
     font-size: 20px;
   }
   .cases-item-desc {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
   }
   .cases-item-link {
     font-size: 16px;
