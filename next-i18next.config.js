@@ -5,7 +5,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'zh',
     reloadOnPrerender: true,
-    locales: ['zh', 'en', 'zh-Hant', 'ja'],
+    locales: ['zh', 'en', 'zh-Hant', 'ja', 'id'],
     // use: [LanguageDetector],
   },
   serializeConfig: false,
@@ -19,6 +19,9 @@ module.exports = {
     },
     zh: {
       common: require('./public/locales/zh/common.json')
+    },
+    id: {
+      common: require('./public/locales/id/common.json')
     },
     'zh-Hant': {
       common: require('./public/locales/zh-Hant/common.json')

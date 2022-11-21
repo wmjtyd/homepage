@@ -21,6 +21,10 @@ export const languages = [
     label: "日本語",
     type: "ja",
   },
+  {
+    label: "Indonesia",
+    type: "id",
+  },
 ];
 
 export const resources = {
